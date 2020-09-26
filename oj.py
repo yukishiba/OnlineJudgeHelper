@@ -105,6 +105,10 @@ def main():
                       dest='pypy3', default=False,
                       help="use PyPy3 for test")
 
+    parser.add_argument('--acl', action="store_true",
+                      dest='acl', default=False,
+                      help="use AtCoder Library for submit")
+
     options = parser.parse_args()
     args = [options.contest_id, options.problem_id]
     try:

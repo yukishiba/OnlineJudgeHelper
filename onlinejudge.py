@@ -593,7 +593,7 @@ class AtCoder(OnlineJudge):
         subprocess.call([setting['browser'], 'https://atcoder.jp/contests/%s/submissions/me' % self.contest_id])
 
     def get_language_id_from_extension(self):
-        return {'.cpp':'4003',
+        return {'.cpp':'4101' if self.options.acl else '4003',
                 '.cc':'4011',
                 '.c':'4001',
                 '.java':'4005',
